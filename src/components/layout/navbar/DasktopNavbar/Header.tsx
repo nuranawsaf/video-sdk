@@ -8,14 +8,14 @@ export const Header = () => {
   const { asPath } = useRouter();
 
   return (
-    <div className="bg-white px-8 w-full py-5 flex items-center justify-between">
+    <div className="bg-white md:px-3 lg:px-8 w-full py-5 flex items-center justify-between">
       <div>
         <h3 className="font-semibold">Dashboard</h3>
       </div>
 
       <div className=" flex items-center w-max h-full">
         <div className="relative">
-          <BiSearch className=" absolute top-[6px]" />
+          <BiSearch className=" absolute top-[6px] text-teritory" />
           <input
             type="search"
             className="ml-7"

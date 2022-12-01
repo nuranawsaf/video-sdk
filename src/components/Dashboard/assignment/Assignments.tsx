@@ -4,13 +4,13 @@ import { assignmentdata } from "./assignmentdata";
 
 export const Assignments = () => {
   return (
-    <div className="bg-white p-5  w-full rounded-3xl h-full">
+    <div className="bg-white md:p-5 p-2  w-full rounded-lg md:rounded-3xl h-full  md:my-4 lg:my-0">
       <h4 className="font-semibold mb-2">Assignments</h4>
       <div>
         {assignmentdata.map((item) => {
           return (
             <div className="flex items-center justify-between py-2">
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-2 md:gap-4">
                 <div
                   className={clsx(
                     item.title == "Elenar Pena" &&
@@ -27,7 +27,7 @@ export const Assignments = () => {
                 </div>
 
                 <div>
-                  <div className="flex gap-1">
+                  <div className="md:flex gap-1 ">
                     <h6 className="font-semibold text-gray-700">
                       {item.title}
                     </h6>

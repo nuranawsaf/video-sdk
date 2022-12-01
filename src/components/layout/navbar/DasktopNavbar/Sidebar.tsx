@@ -1,7 +1,8 @@
 import clsx from "clsx";
 import { useRouter } from "next/router";
 import React from "react";
-import { sidebardata } from "./sidebardata";
+import MobileNavbar from "../mobilenav/MobileNavbar";
+import { sidebardata, SidebardataProps } from "./sidebardata";
 
 export const Sidebar = () => {
   const router = useRouter();
@@ -11,10 +12,11 @@ export const Sidebar = () => {
       <p className="text-3xl px-2 xl:px-8 py-5 font-bold">IQRA</p>
 
       <div className="w-full ">
-        {sidebardata.map((item) => {
+        {sidebardata.map((item: SidebardataProps, index) => {
           const isActive = router.pathname == item.href;
           return (
             <div
+              key={index}
               className={clsx(
                 isActive
                   ? "text-primary border-l-2 h-8 ml-[2px] flex items-center border-l-secondary"

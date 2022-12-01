@@ -8,40 +8,40 @@ import { SlOptions } from "react-icons/sl";
 
 export const VideoCall = () => {
   return (
-    <div className="flex    text-teritory  relative">
-      <div className="bg-red-500 h-max px-3 rounded-md text-red-500 font-semibold absolute bg-opacity-5  top-4 right-4">
+    <div className="flex    text-teritory  relative  px-2 md:px-0 mt-2 md:mt-0">
+      <div className="bg-red-500 text-sm md:text-base h-max px-3 rounded-md text-red-500 font-semibold absolute bg-opacity-5  top-4 right-4">
         Leave
       </div>
-      <div className=" w-fit">
+      <div className=" md:w-fit ">
         <img
-          className="rounded-t-3xl"
+          className="md:rounded-t-3xl rounded-t-lg  max-w-full"
           src="/assests/images/asian-girl.jpg"
           alt=""
         />
-        <div className=" flex justify-between items-center px-8 pt-4 pb-4  bg-white rounded-b-3xl">
+        <div className=" flex justify-between items-center px-2 md:px-8 pt-2 pb-2 md:pt-4 md:pb-4  bg-white rounded-b-lg md:rounded-b-3xl">
           <div className="flex items-center ">
             <div className="">
-              <CgRecord className="text-center w-full text-2xl" />
-              <h6>Record</h6>
+              <CgRecord className="text-center w-full md:text-2xl" />
+              <h6 className="hidden md:block">Record</h6>
             </div>
-            <div className="ml-6">
-              <MdOutlinePeopleAlt className="text-center w-full text-2xl" />
-              <h6>Classmate</h6>
+            <div className="ml-3 md:ml-6">
+              <MdOutlinePeopleAlt className="text-center w-full md:text-2xl" />
+              <h6 className="hidden md:block">Classmate</h6>
             </div>
           </div>
-          <div className="flex gap-4">
-            <div className="border  h-max p-3 rounded-full text-black text-2xl">
+          <div className="flex gap-2 md:gap-4">
+            <div className="border  h-max p-2 md:p-3 rounded-full text-black text-xs md:text-2xl">
               <AiOutlineAudioMuted />
             </div>
-            <div className="text-2xl border  h-max p-3 rounded-full text-white bg-red-400">
+            <div className="text-xs md:text-2xl border  h-max p-2 md:p-3 rounded-full text-white bg-red-400">
               <HiOutlineVideoCamera />
             </div>
-            <div className="text-2xl border  h-max p-3 rounded-full text-black">
+            <div className="text-xs md:text-2xl border  h-max p-2 md:p-3 rounded-full text-black">
               <BsChatLeftText />
             </div>
           </div>
 
-          <div className="flex gap-6 text-2xl">
+          <div className="flex gap-3 md:gap-6  md:text-2xl">
             <SlOptions />
             <BsFullscreen />
           </div>
