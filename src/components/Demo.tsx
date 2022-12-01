@@ -6,6 +6,7 @@ import MobileNavbar from "./layout/navbar/mobilenav/MobileNavbar";
 export const Demo = () => {
   // const [toggle, setToggle] = useState(false);
   return (
+    <div></div>
     // <div>
     //   {toggle && <p>Lorem is the most unsuccessful man</p>}
     //   <div
@@ -18,22 +19,22 @@ export const Demo = () => {
     //   </div>
     // </div>
 
-    <div>
-      {tododata.map((item, index) => {
-        return (
-          <div key={index}>
-            <Hm onItem={item} />
-          </div>
-        );
-      })}
-    </div>
-  );
-};
+    //     <div>
+    //       {tododata.map((item, index) => {
+    //         return (
+    //           <div key={index}>
+    //             <Hm onItem={item} />
+    //           </div>
+    //         );
+    //       })}
+    //     </div>
+    //   );
+    // };
 
-const Hm = ({ onItem }: { onItem: any }) => {
-  return (
-    <div>
-      <h3>{onItem.title}</h3>
-    </div>
+    // const Hm = ({ onItem }: { onItem: any }) => {
+    //   return (
+    //     <div>
+    //       <h3>{onItem.title}</h3>
+    //     </div>
   );
 };

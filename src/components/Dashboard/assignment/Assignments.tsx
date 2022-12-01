@@ -7,9 +7,9 @@ export const Assignments = () => {
     <div className="bg-white md:p-5 p-2  w-full rounded-lg md:rounded-3xl h-full  md:my-4 lg:my-0">
       <h4 className="font-semibold mb-2">Assignments</h4>
       <div>
-        {assignmentdata.map((item) => {
+        {assignmentdata.map((item, index) => {
           return (
-            <div className="flex items-center justify-between py-2">
+            <div key={index} className="flex items-center justify-between py-2">
               <div className="flex items-center gap-2 md:gap-4">
                 <div
                   className={clsx(

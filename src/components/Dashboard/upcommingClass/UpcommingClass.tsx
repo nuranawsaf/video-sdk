@@ -9,9 +9,12 @@ export const UpcommingClass = () => {
         Upcoming Classes
       </h4>
       <div className="px-2 md:px-6">
-        {upcommingdata.map((item) => {
+        {upcommingdata.map((item, index) => {
           return (
-            <div className="flex justify-between items-center lg:py-1 xl:py-2 2xl:py-4 ">
+            <div
+              key={index}
+              className="flex justify-between items-center lg:py-1 xl:py-2 2xl:py-4 "
+            >
               <div className="flex items-center gap-4 py-2 md:py-4 lg:py-0">
                 <div
                   className={clsx(

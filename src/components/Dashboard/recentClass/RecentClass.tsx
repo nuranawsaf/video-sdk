@@ -6,9 +6,12 @@ export const RecentClass = () => {
     <div className="bg-white rounded-lg md:rounded-3xl md:p-5 md:px-6 px-2 py-2 md:py-6   mb-4 md:mb-0 s  w-full">
       <h4 className="font-semibold">Recent Classes</h4>
       <div>
-        {recentclassdata.map((item) => {
+        {recentclassdata.map((item, index) => {
           return (
-            <div className="flex justify-between items-center gap-3  py-3">
+            <div
+              key={index}
+              className="flex justify-between items-center gap-3  py-3"
+            >
               <div className="flex gap-3 items-center">
                 <div>
                   <img
