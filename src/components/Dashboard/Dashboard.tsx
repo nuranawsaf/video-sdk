@@ -3,6 +3,8 @@ import { Layout } from "../layout/Layout";
 import { Assignments } from "./assignment/Assignments";
 import { RecentClass } from "./recentClass/RecentClass";
 import { UpcommingClass } from "./upcommingClass/UpcommingClass";
+import { Exam } from "./UpcommingSection/exam/Exam";
+import { UpcommingClasses } from "./UpcommingSection/upcommingClasses/UpcommingClasses";
 import { VideoCall } from "./videoCall/VideoCall";
 
 export const Dashboard = () => {
@@ -23,6 +25,11 @@ export const Dashboard = () => {
         <div className="flex-1  max-h-full  pb-4 md:pb-0">
           <Assignments />
         </div>
+      </div>
+
+      <div className="grid grid-cols-2 sb max-h-full mt-4 mx-4">
+        <UpcommingClasses />
+        <Exam />
       </div>
     </div>
   );
